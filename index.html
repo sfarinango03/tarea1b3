@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Eliminación de Datos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007BFF;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+            background: #e9ecef;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Solicitud de Eliminación de Datos</h1>
+        <p>Por favor, ingresa tu ID de usuario para solicitar la eliminación de tus datos:</p>
+        <form action="https://tudominio.com/eliminar_datos.php" method="POST">
+            <label for="user_id">ID de Usuario:</label>
+            <input type="text" id="user_id" name="user_id" required>
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+        <div class="message">
+            <p>Al enviar este formulario, tus datos serán eliminados según la política de privacidad de nuestra aplicación.</p>
+        </div>
+    </div>
+</body>
+</html>
